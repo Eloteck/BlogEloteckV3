@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+html{
+	background: #EAEAEA;
+}
+
+img{
+	width : 100%;
+}
+
+/*--------------------------------------------------*/
+/*						HEADER						*/
+/*--------------------------------------------------*/
+
+.princ_header{
+	background: #333;
+	color: #FFF;
+	padding: 20px;
+	text-align: center;
+}
+
+/*------------Hamburger-----------------*/
+.princ_header .menu .hamburger{
+    width: 100%;
+}
+
+.princ_header .menu .hamburger .menu-icon{
+	position: relative; 
+    height: 54px; 
+    border-radius: 50%;
+    transition: transform 0.5s; 
+}
+
+.princ_header .menu .hamburger .deroul-menu{
+	display: none;
+}
+
+.princ_header .menu .hamburger .menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+
+    display: block;
+    width: 22px;
+    height: 2px;
+
+    background-color: #FFF;
+
+    transition: background 0.5s;
+}
+
+.princ_header .menu .hamburger .menu-icon span::before, 
+.princ_header .menu .hamburger .menu-icon span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-6px);
+
+    display: block;
+    width: 22px;
+    height: 2px;
+
+    background-color: #FFF;
+
+    transition: transform 0.5s;
+}
+
+.princ_header .menu .hamburger .menu-icon span::after {
+    transform: translateY(6px); 
+}
+
+.princ_header .menu .hamburger:hover .deroul-menu{
+	display: block;
+	width: 100%;
+}
+
+.princ_header .menu .hamburger,
+.princ_header .menu .hamburger li{
+	display: block;
+	list-style: none;
+	transition: ease 0.2s all;
+}
+
+.princ_header .menu .hamburger li:hover{
+	background: #666;
+	transition: ease 0.2s all;
+}
+
+.princ_header .menu .hamburger a{
+	display: block;
+	padding: 7px;
+	color: #FFF;
+	text-decoration: none;
+}
+/*------------end Hamburger---------------*/
+
+/*--------------------------------------------------*/
+/*						FOOTER						*/
+/*--------------------------------------------------*/
+	
+.princ_footer{
+	background: #333;
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+}
+
+/*--------------------------------------------------*/
+/*						ARTICLES					*/
+/*--------------------------------------------------*/
+
+.box{
+	background: #FFFFFF;
+	border: 1px solid #DDD;
+	box-shadow: 0 0 5px #DDD;
+}
+
+.article{
+	margin: 20px;
+}
+
+.article .article-content{
+	padding: 20px;
+}
+
+.article .article-content .article-date{
+	font-size: 0.8em;
+	font-style: italic;
+	color: #888;
+}
+
+.article .article-content .article-content{
+	padding-bottom: 20px;
+}
+
+.article .article-content .article-link{
+	background: #D7D7D7;
+	border: 1px solid #DDD;
+	padding: 10px;
+
+	color: #333;
+	text-decoration: none;
+}
