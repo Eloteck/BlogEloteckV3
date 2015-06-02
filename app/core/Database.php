@@ -2,7 +2,15 @@
 
 class Database
 {
-	public function connectDb()
+	
+	protected $db;
+	
+	public function __construct()
+	{
+		$this->db = $this->connectDb();
+	}
+	
+	protected function connectDb()
 	{
 		$access = require_once '../app/config/database.php';
 
