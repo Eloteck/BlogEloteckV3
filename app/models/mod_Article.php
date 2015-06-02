@@ -3,11 +3,9 @@
 class mod_Article extends Database
 {
 
-	private $db;
-
 	public function __construct()
 	{
-		$this->db = $this->connectDb(); //connection to the database
+		parent::__construct();
 	}
 
 	public function getArticlesByNumber($nbArticles)
