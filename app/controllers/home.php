@@ -16,7 +16,6 @@ class Home extends Controller
 			
 			$articles[$key]['content'] = $this->truncate($articles[$key]['content'], 500);
 		}
-
 		$this->view('home', $articles);
 	}
 

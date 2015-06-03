@@ -1,7 +1,9 @@
 <header class='princ_header'>
-	<h1>Eloteck.fr</h1>
+	<div class="header_content">
+		<h1>Eloteck.fr</h1>
+	</div>
 	<nav class='menu'>
-		<ul>
+		<ul class='menu_content'>
 			<li class="hamburger">
 				<div class="menu-icon">
 			 		<span class="bar"></span>
