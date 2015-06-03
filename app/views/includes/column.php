@@ -3,7 +3,10 @@
 		<img src="<?= $column['img']?>"/>
 	</div>
 	<div class="box-content">
-		<h2>Eloteck</h2>
+		<div class="user-info">
+			
+			<h2>Eloteck</h2>
+		</div>
 		<p><?= $column['desc']?></p>
 	</div>
 </div>

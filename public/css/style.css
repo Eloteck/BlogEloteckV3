@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
 }
 
-p{
+p,a{
 	margin: 7px 0;
 }
 
@@ -20,6 +20,11 @@ html{
 
 img{
 	width : 100%;
+}
+
+.icon{
+	width: 21px;
+	height: 100%;
 }
 
 /*--------------------------------------------------*/
@@ -109,6 +114,7 @@ img{
 .princ_header .menu .hamburger a{
 	display: block;
 	padding: 7px;
+	margin:0;
 	color: #FFF;
 	text-decoration: none;
 }
@@ -127,6 +133,13 @@ img{
 	position: relative;
 	bottom: 60px;
 }
+
+.about .user-info h2::before{
+	content: url('../img/user20.png');
+	margin-right: 20px;
+	width: 20px;
+}
+
 
 /*--------------------------------------------------*/
 /*						FOOTER						*/
@@ -151,6 +164,7 @@ img{
 	border: 1px solid #DDD;
 	box-shadow: 0 0 5px #DDD;
 	margin: 20px;
+	padding-bottom: 10px;
 }
 
 .box-content{
@@ -162,13 +176,20 @@ img{
 }
 
 .article .article-content{
-	padding: 20px;
+	padding: 30px;
 }
 
-.article .article-content .article-date{
-	font-size: 0.8em;
+.article .article-content .article-info{
+	display: flex;
+	flex-direction: row;
+	width: 400px;
 	font-style: italic;
 	color: #888;
+}
+
+.article .article-content .article-info .article-date::before{
+	content: url('../img/write20.png');
+	margin-right: 10px;
 }
 
 .article .article-content .article-text{
