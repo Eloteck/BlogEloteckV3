@@ -5,5 +5,7 @@
 		<h2><?= $data[0]['title'] ?></h2>
 		<p><i><?= $data[0]['creation_date'] ?></i></p>
 		<p><?= $data[0]['content'] ?></p>
+
+		<div id="disqus_thread"></div>
 	</div>
 </div>

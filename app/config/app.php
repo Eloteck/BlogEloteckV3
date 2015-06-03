@@ -2,6 +2,7 @@
 
 return array(
 	
-	'title'		=> "Eloteck.fr"
+	'title'		=> "Eloteck.fr",
+	'disqus'	=> "eloteck"
 
 	);
