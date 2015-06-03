@@ -1,6 +1,6 @@
 <header class='princ_header'>
 	<div class="header_content">
-		<h1>Eloteck.fr</h1>
+		<h1><?= $app['title']?></h1>
 	</div>
 	<nav class='menu'>
 		<ul class='menu_content'>

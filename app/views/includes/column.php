@@ -1,10 +1,10 @@
 <div class="about box">
 	<div class="pp">
-		<img src="../public/img/pp.png"/>
+		<img src="<?= $column['img']?>"/>
 	</div>
 	<div class="box-content">
 		<h2>Eloteck</h2>
-		<p>Jeune développeur web. 17 ans, bac STi2D SIN. J'aime les chatons, le chocolat, le hardware et l'informatique en général.</p>
+		<p><?= $column['desc']?></p>
 	</div>
 </div>
 <div class="last_tweets box">
