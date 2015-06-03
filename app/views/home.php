@@ -6,7 +6,7 @@
 		<div class="article-content">
 			<h2><?= $new['title'] ?></h2>
 			<p class="article-date"><?= $new['creation_date'] ?></p>
-			<p class="article-content"><?= $new['content'] ?>[...]</p>
+			<p class="article-text"><?= $new['content'] ?>[...]</p>
 			<a href="article/<?= $new['url'] ?>" class="article-link">Lire l'article</a>
 		</div>
 	</div>

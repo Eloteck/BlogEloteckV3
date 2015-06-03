@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
 }
 
+p{
+	margin: 7px 0;
+}
+
 html{
 	background: #EAEAEA;
 }
@@ -106,6 +110,20 @@ img{
 /*------------end Hamburger---------------*/
 
 /*--------------------------------------------------*/
+/*						COLUMN						*/
+/*--------------------------------------------------*/
+
+.about .pp{
+	height: 100px;
+	overflow: hidden;
+}
+
+.about .pp img{
+	position: relative;
+	bottom: 60px;
+}
+
+/*--------------------------------------------------*/
 /*						FOOTER						*/
 /*--------------------------------------------------*/
 	
@@ -124,10 +142,11 @@ img{
 	background: #FFFFFF;
 	border: 1px solid #DDD;
 	box-shadow: 0 0 5px #DDD;
+	margin: 20px;
 }
 
-.article{
-	margin: 20px;
+.box-content{
+	padding: 20px;
 }
 
 .article .article-content{
@@ -140,7 +159,7 @@ img{
 	color: #888;
 }
 
-.article .article-content .article-content{
+.article .article-content .article-text{
 	padding-bottom: 20px;
 }
 
@@ -151,4 +170,102 @@ img{
 
 	color: #333;
 	text-decoration: none;
+}
+
+
+/*--------------------------------------------------*/
+/*						TABLETTES					*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 700px){
+
+	.princ_main{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.void{
+		max-width: 20px;
+		min-width: 20px;
+		width: 20px;
+	}
+
+	.column{
+		flex: 1;
+		max-width: 400px;
+	}
+
+	.content{
+		flex: 2;
+	}
+}
+
+/*--------------------------------------------------*/
+/*							PC						*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 960px){
+
+
+	/*---------------HEADER-------------*/
+
+	.princ_header{
+		text-align: left;
+		padding: 0;
+	}
+
+	.princ_header h1{
+		flex:1;
+		padding: 15px;
+	}
+
+	.princ_header .menu{
+		flex: 1;
+		align-items: flex-end;
+		background: #444;
+	}
+
+	.princ_header .menu .hamburger a{
+		padding: 15px;
+		padding-bottom: 11px;
+		border-bottom: 4px solid #444;
+		transition: ease 0.2s border;
+	}
+
+	.princ_header .menu .hamburger a:hover{
+		border-bottom: 4px solid #FFA500;
+		color: #FFA500;
+		padding-bottom: 11px;
+		background: none;
+		transition: ease 0.2s border;
+	}
+
+	.princ_header .menu .hamburger li:hover{
+		background: none;
+	}
+
+	.princ_header .menu .hamburger .menu-icon{
+		display: none;
+	}
+
+	.princ_header .menu .hamburger .deroul-menu{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.princ_header .menu .hamburger:hover .deroul-menu{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.princ_header .menu .hamburger:hover .deroul-menu li{
+		vertical-align: middle;
+	}
+
+	/*---------------MAIN-------------*/
+
+	.princ_main{
+		width: 80%;
+		margin: auto;
+	}
 }
