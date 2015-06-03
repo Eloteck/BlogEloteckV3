@@ -10,6 +10,18 @@
 		<p><?= $column['desc']?></p>
 	</div>
 </div>
+
+<div class="find-me box">
+	<div class="box-content">
+		<h2>Me retrouver</h2>
+		<ul>
+			<li><a href="http://twitter.com/eloteck" target="_blank"><img src="img/twitter50.png"/></a></li>
+			<li><a href="http://youtube.com/EloteckGaming" target="_blank"><img src="img/youtube50.png"/></a></li>
+			<li><a href="http://github.com/Eloteck" target="_blank"><img src="img/github50.png"/></a></li>
+		</ul>
+	</div>
+</div>
+
 <div class="last_tweets box">
 	<div class="box-content">
 		<h2>Derniers tweets</h2>
