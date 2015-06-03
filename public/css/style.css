@@ -134,9 +134,12 @@ img{
 	
 .princ_footer{
 	background: #333;
-	color: #FFF;
 	padding: 10px;
 	text-align: center;
+}
+
+.princ_footer p{
+	color: #FFF;
 }
 
 /*--------------------------------------------------*/
