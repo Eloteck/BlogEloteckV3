@@ -141,6 +141,39 @@ img{
 }
 
 
+.find-me .box-content ul{
+	margin-top: 10px;
+}
+
+.find-me .box-content ul li{
+	list-style: none;
+	display: inline;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.find-me .box-content ul li img{
+	width: 40px;
+	opacity: 0.5;
+	filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+	transition: ease 0.3s opacity;
+}
+
+.find-me .box-content ul li:hover img{
+	opacity: 1;
+	filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+	transition: ease 0.3s opacity;
+}
+
+
 /*--------------------------------------------------*/
 /*						FOOTER						*/
 /*--------------------------------------------------*/
