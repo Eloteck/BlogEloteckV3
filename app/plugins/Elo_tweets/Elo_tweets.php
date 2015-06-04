@@ -21,12 +21,13 @@ GitHub : Eloteck
             // Connxion to tweeter API
             require 'twitterconnect/twitteroauth.php';
 
+            $access = require_once '../app/config/elo_tweets.php';
             //---------------------------------------------------------------------
             //Place here yours connection ID's for twitter's connection.
-            $consumer_key = "aiHsN8lUxBLQvvceYnIuNa0SX"; //Enter your consumer key
-            $consumer_secret = "rHSqkr0AI97nCgEUrMkrRteBiyy4xnWTyP9FoLjoMbt4wdIWms"; //Enter your consumer secret
-            $access_token = "3095330341-IQvOfHrIZj3bgHEFqRyvQO5zApoPuCaodyhVNXJ"; //enter your access token
-            $access_token_secret = "LmhQwYf1azky3sp1reLp4Eri6A4d9ANidEKuuZmprgUlf"; //enter your access token secret
+            $consumer_key = $access['consumer']; //Enter your consumer key
+            $consumer_secret = $access['consumer_secret']; //Enter your consumer secret
+            $access_token = $access['token']; //enter your access token
+            $access_token_secret = $access['token_secret']; //enter your access token secret
             
             //----------------------------------------------------------------------
 
@@ -41,8 +42,7 @@ GitHub : Eloteck
         }
         ?>
         <ul>
-            <?php foreach ($tweet as $key => $value) { ?>
-                    <?php 
+            <?php foreach ($tweet as $key => $value) { 
                     $text = $value->text;
                     $twitter_pp = $value->user->profile_image_url;
                     $hashtags = $value->entities->hashtags;
