@@ -2,7 +2,7 @@
 
 class Member extends Controller
 {
-	public function login($error = '')
+	public function index($error = '')
 	{
 		if (!isset($_SESSION['pseudo']))
 		{	
