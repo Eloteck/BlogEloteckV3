@@ -6,6 +6,10 @@
 	color: #333;
 }
 
+/*--------------------------------------------------*/
+/*						DEFAULT						*/
+/*--------------------------------------------------*/
+
 h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
 }
@@ -22,10 +26,48 @@ img{
 	width : 100%;
 }
 
+form label img{
+	width: 35px;
+}
+
+input{
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	background: #FFFFFF;
+	border: 3px solid #DDD;
+	margin: 10px 0;
+	width: 300px;
+}
+
+input[type=submit]{
+	background: #CCCCCC;
+	border: 1px solid #ADADAD;
+	width: auto;
+}
+
 .icon{
 	width: 21px;
 	height: 100%;
 }
+
+.box{
+	background: #FFFFFF;
+	border: 1px solid #DDD;
+	box-shadow: 0 0 5px #DDD;
+	margin: 20px;
+	padding-bottom: 10px;
+}
+
+.error-message{
+	background: #FF8080;
+	border: 1px solid red;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0;
+	color: #FFF;
+}
+
 
 /*--------------------------------------------------*/
 /*						HEADER						*/
@@ -192,14 +234,6 @@ img{
 /*						ARTICLES					*/
 /*--------------------------------------------------*/
 
-.box{
-	background: #FFFFFF;
-	border: 1px solid #DDD;
-	box-shadow: 0 0 5px #DDD;
-	margin: 20px;
-	padding-bottom: 10px;
-}
-
 .box-content{
 	padding: 20px;
 }
@@ -251,9 +285,34 @@ img{
 	color: #FFFFFF;
 }
 
-
 .article p{
 	color: #555;
+}
+
+/*--------------------------------------------------*/
+/*						FORMS						*/
+/*--------------------------------------------------*/
+
+.login-form .box-content{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form .box-content form input{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.login-form .box-content form input[type=text],
+.login-form .box-content form input[type=password]{
+	width: 80%;
+	max-width: 300px;
+}
+
+.login-form .box-content .shield{
+	display: none;
+	width: 200px;
 }
 
 /*--------------------------------------------------*/
@@ -358,5 +417,28 @@ img{
 		width: 80%;
 		max-width: 1280px;
 		margin: auto;
+	}
+
+	/*---------------FORM-------------*/
+	
+	.login-form .box-content{
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.login-form .box-content .form{
+		flex: 1;
+	}
+
+	.login-form .box-content .shield{
+		display: flex;
+		width: 200px;
+		margin-right: 30px;
+	}
+
+	.login-form .box-content form input{
+		margin: 10px 0;
+		text-align: left;
 	}
 }
