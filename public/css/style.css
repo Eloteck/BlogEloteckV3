@@ -305,14 +305,17 @@ input[type=submit]{
 }
 
 .login-form .box-content form input[type=text],
-.login-form .box-content form input[type=password]{
+.login-form .box-content form input[type=password],
+.login-form .box-content .error-message{
 	width: 80%;
 	max-width: 300px;
 }
 
 .login-form .box-content .shield{
 	display: none;
+	margin: auto;
 	width: 200px;
+	height: 100%;
 }
 
 /*--------------------------------------------------*/
@@ -440,5 +443,12 @@ input[type=submit]{
 	.login-form .box-content form input{
 		margin: 10px 0;
 		text-align: left;
+	}
+
+	.login-form .box-content form input[type=text],
+	.login-form .box-content form input[type=password],
+	.login-form .box-content .error-message{
+		width: 80%;
+		max-width: 500px;
 	}
 }
