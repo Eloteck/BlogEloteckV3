@@ -68,6 +68,24 @@ input[type=submit]{
 	color: #FFF;
 }
 
+/*--------------------------------------------------*/
+/*						Buttons						*/
+/*--------------------------------------------------*/
+
+.button{
+	display: block;
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	background: #DDDDDD;
+	border-radius : 3px;
+	text-decoration: none;
+}
+
+.red{
+	background: #FF5151;
+	color:#FFF;
+}
 
 /*--------------------------------------------------*/
 /*						HEADER						*/
@@ -316,6 +334,21 @@ input[type=submit]{
 	margin: auto;
 	width: 200px;
 	height: 100%;
+}
+
+/*--------------------------------------------------*/
+/*						ADMIN						*/
+/*--------------------------------------------------*/
+
+.admin_index h1{
+	font-size: 2em;
+	border-bottom: 1px solid #FFA500;
+	margin-bottom: 20px;
+}
+
+.admin_index ul{
+	padding-left: 30px;
+	margin-bottom: 20px;
 }
 
 /*--------------------------------------------------*/

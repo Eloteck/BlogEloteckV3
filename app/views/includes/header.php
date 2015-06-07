@@ -13,7 +13,6 @@
 					<li><a href="articles">Articles</a></li>
 					<li><a href="contact">Contact</a></li>
 					<?php if (isset($_SESSION['pseudo'])): ?>
-						<li><a href="member/logout">Déconnexion</a></li>
 						<li><a href="admin">Admin</a></li>
 					<?php endif ?>
 				</ul>
