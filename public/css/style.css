@@ -260,6 +260,26 @@ input[type=submit]{
 }
 
 
+
+.search .search-input{
+	border: none;
+	border-bottom: 3px solid #CCC;
+	padding:7px;
+	max-height: 35px;
+	border-radius: 0px;
+	padding-right: 35px;
+	background: url('../img/searchdouble.png') no-repeat;
+	background-size: 32px 64px;
+	background-position: right bottom;
+	transition: all 0.3s ease;
+}
+
+.search .search-input:focus{
+	border-bottom: 3px solid #666;
+	background-position: right top;
+	transition: all 0.3s ease;
+}
+
 /*--------------------------------------------------*/
 /*						FOOTER						*/
 /*--------------------------------------------------*/

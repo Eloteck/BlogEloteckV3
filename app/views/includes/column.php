@@ -1,12 +1,3 @@
-<div class="search box">
-	<div class="box-content">
-		<h2>Rechercher</h2>
-		<form method="POST" action="article/search">
-			<input type="search" />
-		</form>
-	</div>
-</div>
-
 <div class="about box">
 	<div class="pp">
 		<img src="<?= $column['img']?>"/>
@@ -17,6 +8,15 @@
 			<h2>Eloteck</h2>
 		</div>
 		<p><?= $column['desc']?></p>
+	</div>
+</div>
+
+<div class="search box">
+	<div class="box-content">
+		<h2>Rechercher</h2>
+		<form method="POST" action="article/search">
+			<input type="search" name="search" class="search-input" placeholder="Rechercher" />
+		</form>
 	</div>
 </div>
 
