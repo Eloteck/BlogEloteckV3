@@ -35,4 +35,13 @@ class Admin extends Controller
 		}
 	}
 
+	public function articleList()
+	{
+		$list = $this->model('mod_Article');
+		$articles = $list->getArticles();
+
+
+		$this->view('admin/list', $articles);
+	}
+
 }

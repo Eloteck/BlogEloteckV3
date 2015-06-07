@@ -50,4 +50,16 @@ class mod_Article extends Database
 		return $verif;
 	}
 
+	public function getArticles()
+	{
+		$db = $this->db;
+
+		$request = "SELECT * FROM articles ORDER BY creation_date";
+		$prep = $db->prepare($request);
+		$prep->execute();
+
+		$result = $prep->fetchAll();
+		return $result;
+	}
+
 }
