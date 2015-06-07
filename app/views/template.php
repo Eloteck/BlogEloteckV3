@@ -12,5 +12,6 @@
 		</section>
 	</main>
 	<?php require_once '../app/views/includes/footer.php'; ?>
+	<?php require_once '../app/views/includes/load_js.php'; ?>
 </body>
 </html>
