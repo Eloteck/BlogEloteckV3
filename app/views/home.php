@@ -12,7 +12,6 @@
 				<div class="void"></div>
 				<p class="article-category"><?= $new['category'] ?></p>
 			</div>
-			<p class="article-text"><?= $new['content'] ?>[...]</p>
 			<a href="article/<?= $new['url'] ?>" class="article-link">Lire l'article</a>
 		</div>
 	</div>
