@@ -62,4 +62,16 @@ class mod_Article extends Database
 		return $result;
 	}
 
+	public function getArticlesByTags($tags)
+	{
+		$db = $this->db;
+
+		$request = "SELECT * FROM articles WHERE title LIKE '%".$tags."%' OR tags LIKE '%".$tags."%' ORDER BY creation_date";
+		$prep = $db->prepare($request);
+		$prep->execute();
+
+		$result = $prep->fetchAll();
+		return $result;
+	}
+
 }
