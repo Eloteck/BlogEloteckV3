@@ -292,15 +292,33 @@ input[type=submit]{
 
 .article .article-content .article-info{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 400px;
 	font-style: italic;
-	color: #888;
+	color: #AAA;
+}
+
+.article .article-content .article-info .article-date,
+.article .article-content .article-info .article-tags,
+.article .article-content .article-info .article-category
+{
+	color: #AAA;
+	font-size: 0.9em;
 }
 
 .article .article-content .article-info .article-date::before{
-	content: url('../img/write20.png');
 	margin-right: 10px;
+	content: url('../img/write20.png');
+}
+
+.article .article-content .article-info .article-tags::before{
+	margin-right: 10px;
+	content: url('../img/tag20.png');
+}
+
+.article .article-content .article-info .article-category::before{
+	margin-right: 10px;
+	content: url('../img/category20.png');
 }
 
 .article .article-content .article-text{
@@ -478,6 +496,20 @@ input[type=submit]{
 		width: 80%;
 		max-width: 1280px;
 		margin: auto;
+	}
+
+
+	/*---------------ARTICLE-------------*/
+
+	.article .article-content .article-info{
+		flex-direction: row;
+		align-flex: flex-end;
+	}
+	
+	.article .article-content .article-info .void{
+		width: 20px;
+		max-width: 20px;
+		min-width: 20px;
 	}
 
 	/*---------------FORM-------------*/
