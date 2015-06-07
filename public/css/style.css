@@ -384,7 +384,8 @@ input[type=submit]{
 /*						ADMIN						*/
 /*--------------------------------------------------*/
 
-.admin_index ul{
+.admin_index ul,
+.article-list ul{
 	padding-left: 30px;
 	margin-bottom: 20px;
 }
