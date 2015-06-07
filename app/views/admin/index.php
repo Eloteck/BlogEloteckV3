@@ -8,7 +8,7 @@
 
 		<h2>Articles</h2>
 		<ul>
-			<li>Ecrire un article</li>
+			<li><a href="admin/write">Ecrire un article</a></li>
 			<li>Liste des articles</li>
 		</ul>
 		<h2>Administration</h2>

@@ -16,4 +16,9 @@ class Admin extends Controller
 		$this->view('admin/index');
 	}
 
+	public function write()
+	{
+		$this->view('admin/write');
+	}
+
 }

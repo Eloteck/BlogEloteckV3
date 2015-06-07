@@ -10,9 +10,4 @@
 	<!-- load external css-->
 	<!-- EloTweets-->
 	<link rel="stylesheet" type="text/css" href="css/Elo_tweets.css">
-
-	<?php if (isset($_SESSION['pseudo'])): ?>
-		<!-- trumbowig (if connected-->
-		<link rel="stylesheet" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css">
-	<?php endif ?>
 </head>

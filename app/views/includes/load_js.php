@@ -1,5 +1,5 @@
 <!-- Load jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 
 <!-- Load Disqus -->
@@ -14,10 +14,14 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<noscript>Veuillez activer javascript pour voir les <a href="https://disqus.com/?ref_noscript" rel="nofollow">commentaires.</a></noscript>
 
 
 <!-- Load trumbowyg if connected -->
 <?php if (isset($_SESSION['pseudo'])): ?>
-	<script src="bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
+	<script src="../app/plugins/ckeditor/ckeditor.js"></script>
+	<script>
+        // Replace the <textarea id="editor1"> with a CKEditor instance, using default configuration.
+        CKEDITOR.replace( 'editor' );
+    </script>
 <?php endif ?>
