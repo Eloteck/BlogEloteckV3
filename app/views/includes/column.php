@@ -1,3 +1,12 @@
+<div class="search box">
+	<div class="box-content">
+		<h2>Rechercher</h2>
+		<form method="POST" action="article/search">
+			<input type="search" />
+		</form>
+	</div>
+</div>
+
 <div class="about box">
 	<div class="pp">
 		<img src="<?= $column['img']?>"/>
