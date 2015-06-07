@@ -3,10 +3,25 @@
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	color: #333;
 }
+
+/*--------------------------------------------------*/
+/*						DEFAULT						*/
+/*--------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
+}
+
+h1{
+	font-size: 2em;
+	border-bottom: 1px solid #FFA500;
+	margin-bottom: 20px;
+}
+
+p,a{
+	margin: 7px 0;
 }
 
 html{
@@ -15,6 +30,85 @@ html{
 
 img{
 	width : 100%;
+}
+
+textarea{
+	width: 100%;
+}
+
+form label img{
+	width: 35px;
+}
+
+input{
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	background: #FFFFFF;
+	border: 3px solid #DDD;
+	margin: 10px 0;
+	width: 100%;
+}
+
+input[type=submit]{
+	background: #CCCCCC;
+	border: 1px solid #ADADAD;
+	width: auto;
+}
+
+.icon{
+	width: 21px;
+	height: 100%;
+}
+
+.box{
+	background: #FFFFFF;
+	border: 1px solid #DDD;
+	box-shadow: 0 0 5px #DDD;
+	margin: 20px;
+	padding-bottom: 10px;
+}
+
+.error-message{
+	background: #FF8080;
+	border: 1px solid red;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0;
+	color: #FFF;
+}
+
+.success-message{
+	background: #76FF99;
+	border: 1px solid green;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0;
+	color: #333;
+}
+
+/*--------------------------------------------------*/
+/*						Buttons						*/
+/*--------------------------------------------------*/
+
+.button{
+	display: block;
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	background: #DDDDDD;
+	border-radius : 3px;
+	text-decoration: none;
+}
+
+.red{
+	background: #FF5151;
+	color:#FFF;
+}
+
+.green{
+	background: green;
+	color:#FFF;
 }
 
 /*--------------------------------------------------*/
@@ -26,6 +120,12 @@ img{
 	color: #FFF;
 	padding: 20px;
 	text-align: center;
+}
+
+.princ_header h1{
+	color: #FFF;
+	border: none;
+	margin-bottom: 0;
 }
 
 /*------------Hamburger-----------------*/
@@ -100,10 +200,65 @@ img{
 .princ_header .menu .hamburger a{
 	display: block;
 	padding: 7px;
+	margin:0;
 	color: #FFF;
 	text-decoration: none;
 }
 /*------------end Hamburger---------------*/
+
+/*--------------------------------------------------*/
+/*						COLUMN						*/
+/*--------------------------------------------------*/
+
+.about .pp{
+	height: 100px;
+	overflow: hidden;
+}
+
+.about .pp img{
+	position: relative;
+	bottom: 60px;
+}
+
+.about .user-info h2::before{
+	content: url('../img/user20.png');
+	margin-right: 20px;
+	width: 20px;
+}
+
+
+.find-me .box-content ul{
+	margin-top: 10px;
+}
+
+.find-me .box-content ul li{
+	list-style: none;
+	display: inline;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.find-me .box-content ul li img{
+	width: 40px;
+	opacity: 0.5;
+	filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+	transition: ease 0.3s opacity;
+}
+
+.find-me .box-content ul li:hover img{
+	opacity: 1;
+	filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+	transition: ease 0.3s opacity;
+}
+
 
 /*--------------------------------------------------*/
 /*						FOOTER						*/
@@ -111,44 +266,279 @@ img{
 	
 .princ_footer{
 	background: #333;
-	color: #FFF;
 	padding: 10px;
 	text-align: center;
+}
+
+.princ_footer p{
+	color: #FFF;
 }
 
 /*--------------------------------------------------*/
 /*						ARTICLES					*/
 /*--------------------------------------------------*/
 
-.box{
-	background: #FFFFFF;
-	border: 1px solid #DDD;
-	box-shadow: 0 0 5px #DDD;
-}
-
-.article{
-	margin: 20px;
-}
-
-.article .article-content{
+.box-content{
 	padding: 20px;
 }
 
-.article .article-content .article-date{
-	font-size: 0.8em;
-	font-style: italic;
-	color: #888;
+.article{
+	max-width: 800px;
 }
 
-.article .article-content .article-content{
+.article .article-content{
+	padding: 30px;
+}
+
+.article .article-content .article-info{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	font-style: italic;
+	color: #AAA;
+}
+
+.article .article-content .article-info .article-date,
+.article .article-content .article-info .article-tags,
+.article .article-content .article-info .article-category
+{
+	color: #AAA;
+	font-size: 0.9em;
+}
+
+.article .article-content .article-info .article-date::before{
+	margin-right: 10px;
+	content: url('../img/write20.png');
+}
+
+.article .article-content .article-info .article-tags::before{
+	margin-right: 10px;
+	content: url('../img/tag20.png');
+}
+
+.article .article-content .article-info .article-category::before{
+	margin-right: 10px;
+	content: url('../img/category20.png');
+}
+
+.article .article-content .article-text{
 	padding-bottom: 20px;
 }
 
 .article .article-content .article-link{
 	background: #D7D7D7;
-	border: 1px solid #DDD;
+	border: 1px solid #CCC;
+	border-radius: 3px;
 	padding: 10px;
 
 	color: #333;
 	text-decoration: none;
+	transition: ease 0.2s box-shadow;
+}
+
+.article .article-content .article-link:hover{
+	box-shadow: 0 0 6px #CCC inset;
+	transition: ease 0.2s box-shadow;
+}
+
+.article .article-content .article-link:active{
+	border: none;
+	background: #FFA500;
+	color: #FFFFFF;
+}
+
+.article p{
+	color: #555;
+}
+
+/*--------------------------------------------------*/
+/*						FORMS						*/
+/*--------------------------------------------------*/
+
+.login-form .box-content{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form .box-content form input{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.login-form .box-content form input[type=text],
+.login-form .box-content form input[type=password],
+.login-form .box-content .error-message{
+	width: 80%;
+	max-width: 300px;
+}
+
+.login-form .box-content .shield{
+	display: none;
+	margin: auto;
+	width: 200px;
+	height: 100%;
+}
+
+/*--------------------------------------------------*/
+/*						ADMIN						*/
+/*--------------------------------------------------*/
+
+.admin_index ul{
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+
+/*--------------------------------------------------*/
+/*						TABLETTES					*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 700px){
+
+	.princ_main{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.void{
+		max-width: 20px;
+		min-width: 20px;
+		width: 20px;
+	}
+
+	.column{
+		flex: 1;
+		max-width: 400px;
+	}
+
+	.content{
+		flex: 2;
+	}
+}
+
+/*--------------------------------------------------*/
+/*							PC						*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 960px){
+
+	input{
+		max-width: 100%;
+		width: 100%;
+	}
+
+
+	/*---------------HEADER-------------*/
+
+	.princ_header{
+		text-align: left;
+		padding: 0;
+	}
+
+	.princ_header .header_content,
+	.princ_header .menu .menu_content{
+		width: 80%;
+		max-width: 1280px;
+		margin: auto;
+	}
+
+	.princ_header h1{
+		flex:1;
+		padding: 15px;
+	}
+
+	.princ_header .menu{
+		flex: 1;
+		align-items: flex-end;
+		background: #444;
+	}
+
+	.princ_header .menu .hamburger a{
+		padding: 15px;
+		padding-bottom: 11px;
+		border-bottom: 4px solid #444;
+		transition: ease 0.2s border;
+	}
+
+	.princ_header .menu .hamburger a:hover{
+		border-bottom: 4px solid #FFA500;
+		color: #FFA500;
+		padding-bottom: 11px;
+		background: none;
+		transition: ease 0.2s border;
+	}
+
+	.princ_header .menu .hamburger li:hover{
+		background: none;
+	}
+
+	.princ_header .menu .hamburger .menu-icon{
+		display: none;
+	}
+
+	.princ_header .menu .hamburger .deroul-menu{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.princ_header .menu .hamburger:hover .deroul-menu{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.princ_header .menu .hamburger:hover .deroul-menu li{
+		vertical-align: middle;
+	}
+
+	/*---------------MAIN-------------*/
+
+	.princ_main{
+		width: 80%;
+		max-width: 1280px;
+		margin: auto;
+	}
+
+
+	/*---------------ARTICLE-------------*/
+
+	.article .article-content .article-info{
+		flex-direction: row;
+		align-flex: flex-end;
+	}
+	
+	.article .article-content .article-info .void{
+		width: 20px;
+		max-width: 20px;
+		min-width: 20px;
+	}
+
+	/*---------------FORM-------------*/
+	
+	.login-form .box-content{
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.login-form .box-content .form{
+		flex: 1;
+	}
+
+	.login-form .box-content .shield{
+		display: flex;
+		width: 200px;
+		margin-right: 30px;
+	}
+
+	.login-form .box-content form input{
+		margin: 10px 0;
+		text-align: left;
+	}
+
+	.login-form .box-content form input[type=text],
+	.login-form .box-content form input[type=password],
+	.login-form .box-content .error-message{
+		width: 80%;
+		max-width: 500px;
+	}
 }

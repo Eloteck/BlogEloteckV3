@@ -31,4 +31,23 @@ class mod_Article extends Database
 		$result = $prep->fetchAll();
 		return $result;
 	}
+
+	public function sendArticle($title, $url, $img, $content, $tags, $category)
+	{
+
+		$title = htmlentities($title);
+		$url = htmlentities($url);
+		$img = htmlentities($img);
+		$tags = htmlentities($tags);
+		$category = htmlentities($category);
+
+		$db = $this->db;
+
+		$request = "INSERT INTO articles (title, content, tags, url, img, category) VALUES ('".$title."', '".$content."', '".$tags."', '".$url."', '".$img."', '".$category."')";
+		$prep = $db->prepare($request);
+		$verif = $prep->execute();
+
+		return $verif;
+	}
+
 }

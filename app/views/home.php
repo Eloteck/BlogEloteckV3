@@ -5,8 +5,14 @@
 		<img src='<?= $new['img'] ?>' alt="Miniature"/>
 		<div class="article-content">
 			<h2><?= $new['title'] ?></h2>
-			<p class="article-date"><?= $new['creation_date'] ?></p>
-			<p class="article-content"><?= $new['content'] ?>[...]</p>
+			<div class="article-info">
+				<p class="article-date"><?= $new['creation_date'] ?></p>
+				<div class="void"></div>
+				<p class="article-tags"><?= $new['tags'] ?></p>
+				<div class="void"></div>
+				<p class="article-category"><?= $new['category'] ?></p>
+			</div>
+			<?= $new['content'] ?>
 			<a href="article/<?= $new['url'] ?>" class="article-link">Lire l'article</a>
 		</div>
 	</div>
