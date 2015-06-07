@@ -17,7 +17,7 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
-<!-- Load trumbowyg is connected -->
+<!-- Load trumbowyg if connected -->
 <?php if (isset($_SESSION['pseudo'])): ?>
 	<script src="bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
 <?php endif ?>
