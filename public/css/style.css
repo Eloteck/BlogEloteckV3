@@ -47,7 +47,7 @@ input{
 	background: #FFFFFF;
 	border: 3px solid #DDD;
 	margin: 10px 0;
-	width: 300px;
+	width: 100%;
 }
 
 input[type=submit]{
@@ -78,6 +78,15 @@ input[type=submit]{
 	color: #FFF;
 }
 
+.success-message{
+	background: #76FF99;
+	border: 1px solid green;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0;
+	color: #333;
+}
+
 /*--------------------------------------------------*/
 /*						Buttons						*/
 /*--------------------------------------------------*/
@@ -94,6 +103,11 @@ input[type=submit]{
 
 .red{
 	background: #FF5151;
+	color:#FFF;
+}
+
+.green{
+	background: green;
 	color:#FFF;
 }
 
@@ -389,6 +403,11 @@ input[type=submit]{
 /*--------------------------------------------------*/
 
 @media screen and (min-width: 960px){
+
+	input{
+		max-width: 100%;
+		width: 100%;
+	}
 
 
 	/*---------------HEADER-------------*/
