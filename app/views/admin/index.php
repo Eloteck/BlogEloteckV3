@@ -9,7 +9,7 @@
 		<h2>Articles</h2>
 		<ul>
 			<li><a href="admin/write">Ecrire un article</a></li>
-			<li>Liste des articles</li>
+			<li><a href="admin/articleList">Liste des articles</a></li>
 		</ul>
 		<h2>Administration</h2>
 		<ul>

@@ -10,7 +10,6 @@
 				</div>
 				<ul class="deroul-menu">
 					<li><a href="index.php">Accueil</a></li>
-					<li><a href="articles">Articles</a></li>
 					<li><a href="contact">Contact</a></li>
 					<?php if (isset($_SESSION['pseudo'])): ?>
 						<li><a href="admin">Admin</a></li>
