@@ -1,4 +1,4 @@
-<?php $title = 'Accueil' ?>
+<?php $title = 'Recherche : ' .$_POST['search'] ?>
 
 <?php foreach ($data as $key => $new): ?>
 	<div class="article box">

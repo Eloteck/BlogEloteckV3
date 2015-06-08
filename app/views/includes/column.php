@@ -11,6 +11,15 @@
 	</div>
 </div>
 
+<div class="search box">
+	<div class="box-content">
+		<h2>Rechercher</h2>
+		<form method="POST" action="article/search">
+			<input type="search" name="search" class="search-input" placeholder="Rechercher" />
+		</form>
+	</div>
+</div>
+
 <div class="find-me box">
 	<div class="box-content">
 		<h2>Me retrouver</h2>
