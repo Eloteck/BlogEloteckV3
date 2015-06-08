@@ -226,6 +226,17 @@ input[type=submit]{
 	width: 20px;
 }
 
+.about .user-info .user-location{
+	font-style: italic;
+	color: #999;
+	margin-top: 20px;
+}
+
+.about .user-info .user-location::before{
+	content: url('../img/location.png');
+	margin-right: 10px;
+}
+
 
 .find-me .box-content ul{
 	margin-top: 10px;
