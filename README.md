@@ -1,7 +1,14 @@
 # BlogEloteckV3
 Just my blog.
 
-Created by Eloteck
+###Features :
+  - Panel admin
+    - Create articles
+    - Have a list of your articles
+  
+  - Search articles
+  - View articles
+
 
 Website : http://eloteck.fr/
 
@@ -11,4 +18,4 @@ Contact:
 
 MIT License
 
-Eloteck © 2015
+Created by Eloteck - 2015 ©
