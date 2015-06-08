@@ -10,12 +10,14 @@ Just my blog.
   - View articles
 
 
-Website : http://eloteck.fr/
+###Credits
+#####Website : http://eloteck.fr/
 
-Contact:
+#####Contact:
   - Mail :    eloteck@outlook.com
   - Twitter : @Eloteck
 
-MIT License
 
+
+MIT License
 Created by Eloteck - 2015 ©
