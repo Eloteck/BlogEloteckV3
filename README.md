@@ -8,4 +8,6 @@ Contact:
   - Mail :    eloteck@outlook.com
   - Twitter : @Eloteck
 
+MIT License
+
 Eloteck © 2015
