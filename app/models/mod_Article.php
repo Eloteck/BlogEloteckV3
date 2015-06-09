@@ -73,5 +73,22 @@ class mod_Article extends Database
 		$result = $prep->fetchAll();
 		return $result;
 	}
+	
+	public function updateArticle($url_active, $title, $url, $img, $content, $tags, $category)
+	{
+		$title = htmlentities($title);
+		$url = htmlentities($url);
+		$img = htmlentities($img);
+		$tags = htmlentities($tags);
+		$category = htmlentities($category);
+
+		$request = "UPDATE articles SET title='".$title."', content='".$content."', tags='".$tags."', url='".$url."', img='".$img."', category='".$category."' WHERE url='".$url_active."' ";
+
+		$db = $this->db;
+		$prep = $db->prepare($request);
+		$result = $prep->execute();
+
+		return $result;
+	}
 
 }

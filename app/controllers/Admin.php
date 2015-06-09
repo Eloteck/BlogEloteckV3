@@ -35,6 +35,34 @@ class Admin extends Controller
 		}
 	}
 
+	public function editArticle($url='')
+	{
+		if (!$url) {
+			header('Location:../../error.php');
+		}
+		else{
+			$model = $this->model('mod_Article');
+
+			$message = NULL;
+
+			if (isset($_POST['article_title']) && isset($_POST['article_url']) && isset($_POST['article_img']) && isset($_POST['article_content']) && isset($_POST['article_tags']) && isset($_POST['article_category']))
+			{
+				echo $_POST['article_title'];
+				$verif = $model->updateArticle($url, $_POST['article_title'], $_POST['article_url'], $_POST['article_img'], $_POST['article_content'], $_POST['article_tags'], $_POST['article_category']);
+				
+				if ($verif == true) {
+					$message = 'Votre article a bien été modifié ! <a href="article/'.$_POST['article_url'].'">Lien vers l\'article</a>';
+				}
+				else{
+					$message = 'Oops, tout ne s\'est pas bien passer. Veuillez rééssayer.';
+				}
+			}
+
+			$article_content = $model->getArticleFromUrl($url);
+			$this->view('admin/editArticle', ['message' => $message, 'url' => $url, 'article' => $article_content]);
+		}
+	}
+
 	public function articleList()
 	{
 		$list = $this->model('mod_Article');
