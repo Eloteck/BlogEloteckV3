@@ -1,7 +1,6 @@
 Options -MultiViews
 RewriteEngine On
-
-RewriteBase /BlogEloteckV3/public/
+Options -Indexes
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
