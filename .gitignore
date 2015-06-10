@@ -44,3 +44,4 @@ Temporary Items
 app/plugins/Elo_tweets/cache.tmp
 app/config
 app/plugins/Elo_tweets/cache.tmp
+*.tmp
