@@ -5,7 +5,7 @@ class Home extends Controller
 	public function index()
 	{
 		$article = $this->model('mod_Article'); //require the model
-		$articles = $article->getArticlesByNumber(2);
+		$articles = $article->getArticlesByNumber(10);
 
 		foreach ($articles as $key => $article) { //Date layout
 			$cut_day_hour = explode(' ', $article['creation_date']);
