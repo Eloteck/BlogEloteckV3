@@ -324,7 +324,7 @@ input[type=submit]{
 .article .article-content .article-info{
 	display: flex;
 	flex-direction: column;
-	width: 400px;
+	width: 100%;
 	font-style: italic;
 	color: #AAA;
 }
@@ -335,6 +335,7 @@ input[type=submit]{
 {
 	color: #AAA;
 	font-size: 0.9em;
+	flex: 1;
 }
 
 .article .article-content .article-info .article-date::before{
