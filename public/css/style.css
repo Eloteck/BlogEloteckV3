@@ -34,6 +34,19 @@ img{
 
 textarea{
 	width: 100%;
+	height: 500px;
+	max-width: 100%;
+}
+
+blockquote{
+	font-style: italic;
+	background: #DDDDDD;
+	border-left: 3px solid #FFA500;
+	padding: 10px;
+}
+
+blockquote code{
+	font-family: "Inconsolata", serif;
 }
 
 form label img{
