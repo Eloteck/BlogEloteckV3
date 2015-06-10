@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<?php require_once '../app/views/includes/head.php'; ?>
 <body>

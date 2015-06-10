@@ -15,8 +15,8 @@
 
 <!-- Load scEditor if connected -->
 <?php if (isset($_SESSION['pseudo'])): ?>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../app/plugins/scEditor/minified/jquery.sceditor.bbcode.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="widgets/scEditor/minified/jquery.sceditor.bbcode.min.js"></script>
 
     <script>
         $(function() {
