@@ -7,10 +7,5 @@
 	<!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../app/plugins/scEditor/minified/themes/default.min.css" type="text/css" media="all" />
-
-	
-	<!-- load external css-->
-	<!-- EloTweets-->
-	<link rel="stylesheet" type="text/css" href="css/Elo_tweets.css">
+	<link rel="stylesheet" href="widgets/scEditor/minified/themes/default.min.css" type="text/css" media="all" />
 </head>
