@@ -34,13 +34,6 @@ class mod_Article extends Database
 
 	public function sendArticle($title, $url, $img, $content, $tags, $category)
 	{
-
-		$title = htmlentities($title);
-		$url = htmlentities($url);
-		$img = htmlentities($img);
-		$tags = htmlentities($tags);
-		$category = htmlentities($category);
-
 		$db = $this->db;
 
 		$request = "INSERT INTO articles (title, content, tags, url, img, category) VALUES ('".$title."', '".$content."', '".$tags."', '".$url."', '".$img."', '".$category."')";
@@ -76,12 +69,6 @@ class mod_Article extends Database
 	
 	public function updateArticle($url_active, $title, $url, $img, $content, $tags, $category)
 	{
-		$title = htmlentities($title);
-		$url = htmlentities($url);
-		$img = htmlentities($img);
-		$tags = htmlentities($tags);
-		$category = htmlentities($category);
-
 		$request = "UPDATE articles SET title='".$title."', content='".$content."', tags='".$tags."', url='".$url."', img='".$img."', category='".$category."' WHERE url='".$url_active."' ";
 
 		$db = $this->db;
