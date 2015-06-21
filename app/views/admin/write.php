@@ -1,5 +1,5 @@
 <?php $title="Ecrire un article" ?>
-<section class='admin_index box'>
+<section class='write-article box'>
 	<div class='box-content'>
 		<h1>Ecrire un article</h1>
 		<?php if (isset($data['success'])) : ?>

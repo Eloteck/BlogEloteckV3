@@ -1,7 +1,3 @@
-<!-- Load jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-
 <!-- Load Disqus -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -17,11 +13,19 @@
 <noscript>Veuillez activer javascript pour voir les <a href="https://disqus.com/?ref_noscript" rel="nofollow">commentaires.</a></noscript>
 
 
-<!-- Load trumbowyg if connected -->
+<!-- Load scEditor if connected -->
 <?php if (isset($_SESSION['pseudo'])): ?>
-	<script src="../app/plugins/ckeditor/ckeditor.js"></script>
-	<script>
-        // Replace the <textarea id="editor1"> with a CKEditor instance, using default configuration.
-        CKEDITOR.replace( 'editor' );
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="widgets/scEditor/minified/jquery.sceditor.bbcode.min.js"></script>
+
+    <script>
+        $(function() {
+            // Replace all textarea's
+            // with SCEditor
+            $("textarea").sceditor({
+                plugins: "xhtml",
+            style: "minified/jquery.sceditor.default.min.css"
+            });
+        });
     </script>
 <?php endif ?>
