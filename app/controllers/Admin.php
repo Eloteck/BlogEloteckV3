@@ -16,6 +16,17 @@ class Admin extends Controller
 		$this->view('admin/index');
 	}
 
+
+	public function articleList()
+	{
+		$list = $this->model('mod_Article');
+		$articles = $list->getArticles();
+
+
+		$this->view('admin/list', $articles);
+	}
+
+
 	public function write()
 	{
 		if (isset($_POST['article_title']) && isset($_POST['article_url']) && isset($_POST['article_img']) && isset($_POST['article_content']) && isset($_POST['article_tags']) && isset($_POST['article_category']))
@@ -77,13 +88,30 @@ class Admin extends Controller
 		}
 	}
 
-	public function articleList()
+	public function deleteArticle($url='')
 	{
-		$list = $this->model('mod_Article');
-		$articles = $list->getArticles();
+		if (!$url) {
+			header('Location:../../error.php');
+		}
+		else {
+			if (isset($_POST['conf'])) {
+				$model = $this->model('mod_Article');
+				$result = $model->deleteArticle($url);
 
-
-		$this->view('admin/list', $articles);
+				if ($result) {
+					$message = 'Votre article a bien été supprimé';
+				}
+				else{
+					$message = 'Oops, tout ne s\'est pas bien passer. Veuillez rééssayer.';
+				}
+				$this->view('admin/deleteArticle', ['message' => $message, 'conf' => 'true']);
+			}
+			else{
+				$model = $this->model('mod_Article');
+				$article = $model->getArticleFromUrl($url);
+				$this->view('admin/deleteArticle', ['url' => $url, 'conf' => 'false', 'article' => $article]);
+			}
+		}
 	}
 
 }

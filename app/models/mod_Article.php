@@ -78,4 +78,15 @@ class mod_Article extends Database
 		return $result;
 	}
 
+	public function deleteArticle($url)
+	{
+		$request = "DELETE FROM articles WHERE url='".$url."' ";
+
+		$db = $this->db;
+		$prep = $db->prepare($request);
+		$result = $prep->execute();
+
+		return $result;
+	}
+
 }

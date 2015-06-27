@@ -51,8 +51,7 @@ input{
 }
 
 input[type=submit]{
-	background: #CCCCCC;
-	border: 1px solid #ADADAD;
+	border: none;
 	width: auto;
 }
 
@@ -80,7 +79,6 @@ input[type=submit]{
 
 .success-message{
 	background: #76FF99;
-	border: 1px solid green;
 	border-radius: 3px;
 	padding: 10px;
 	margin: 10px 0;
@@ -102,7 +100,7 @@ input[type=submit]{
 }
 
 .red{
-	background: #FF5151;
+	background-color: #FF5151;
 	color:#FFF;
 }
 
@@ -405,7 +403,6 @@ input[type=submit]{
 
 .article .article-content .article-link{
 	background: #D7D7D7;
-	border: 1px solid #CCC;
 	border-radius: 3px;
 	padding: 10px;
 
