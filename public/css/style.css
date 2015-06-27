@@ -24,6 +24,10 @@ p,a{
 	margin: 7px 0;
 }
 
+b{
+	font-weight: bold;
+}
+
 html{
 	background: #EAEAEA;
 }
