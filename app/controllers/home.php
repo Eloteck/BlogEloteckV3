@@ -15,7 +15,7 @@ class Home extends Controller
 			$articles[$key]['creation_date'] = 'Publié le '.$day[2].'/'.$day[1].' à '.$hour[0].'h'.$hour[1];
 			
                         require_once '../app/plugins/truncate/truncate.php';
-			$articles[$key]['content'] = truncate($articles[$key]['content'], 500);
+			$articles[$key]['content'] = truncate($articles[$key]['content'], 200);
 		}
 		$this->view('home', $articles);
 	}
