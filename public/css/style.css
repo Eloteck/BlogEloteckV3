@@ -32,15 +32,11 @@ html{
 	background: #EAEAEA;
 }
 
-img{
-	width : 100%;
-}
-
 form label img{
 	width: 35px;
 }
 
-input{
+input, textarea{
 	display: block;
 	border-radius: 5px;
 	padding: 10px;
@@ -216,6 +212,7 @@ input[type=submit]{
 
 .about .pp img{
 	position: relative;
+	width: 100%;
 	bottom: 60px;
 }
 
@@ -427,6 +424,10 @@ input[type=submit]{
 	color: #555;
 }
 
+.article img{
+	width: 100%;
+}
+
 .article blockquote{
 	font-style: italic;
 	background: #DDDDDD;
@@ -532,8 +533,12 @@ input[type=submit]{
 @media screen and (min-width: 960px){
 
 	input{
-		max-width: 100%;
-		width: 100%;
+		width: 300px;
+	}
+
+	textarea{
+		width: 500px;
+		max-width: 90%;
 	}
 
 
