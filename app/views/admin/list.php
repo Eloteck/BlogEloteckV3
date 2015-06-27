@@ -3,9 +3,9 @@
 	<div class="box-content">
 		<h1>Liste des articles</h1>
 		<a href="admin/write" class="button">Nouvel article</a>
-		<ul>
+		<ul class="list">
 			<?php foreach ($data as $key => $article) : ?>
-				<li><a href="article/<?= $data[$key]['url'] ?>"><?= $data[$key]['title'] ?></a> - <a href="admin/editArticle/<?= $data[$key]['url'] ?>">Modifier</a> - <a href="admin/deleteArticle/<?= $data[$key]['url'] ?>">Supprimer</a></li>
+				<li><a href="article/<?= $data[$key]['url'] ?>" class="list-article-title"><?= $data[$key]['title'] ?></a> - <a href="admin/editArticle/<?= $data[$key]['url'] ?>">Modifier</a> - <a href="admin/deleteArticle/<?= $data[$key]['url'] ?>">Supprimer</a></li>
 			<?php endforeach ?>
 		</ul>
 	</div>

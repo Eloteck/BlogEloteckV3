@@ -97,6 +97,7 @@ input[type=submit]{
 	background: #DDDDDD;
 	border-radius : 3px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .red{
@@ -483,6 +484,20 @@ input[type=submit]{
 	max-width: 100%;
 }
 
+
+.article-list .list{
+	list-style: none;
+	padding: 0;
+}
+
+.article-list .list li{
+	padding: 7px 0;
+}
+
+.article-list .list .list-article-title{
+	text-decoration: none;
+	font-weight: 400;
+}
 /*--------------------------------------------------*/
 /*						TABLETTES					*/
 /*--------------------------------------------------*/
