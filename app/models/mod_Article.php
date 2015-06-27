@@ -47,7 +47,7 @@ class mod_Article extends Database
 	{
 		$db = $this->db;
 
-		$request = "SELECT * FROM articles ORDER BY creation_date";
+		$request = "SELECT * FROM articles ORDER BY creation_date DESC";
 		$prep = $db->prepare($request);
 		$prep->execute();
 
@@ -59,7 +59,7 @@ class mod_Article extends Database
 	{
 		$db = $this->db;
 
-		$request = "SELECT * FROM articles WHERE title LIKE '%".$tags."%' OR tags LIKE '%".$tags."%' ORDER BY creation_date";
+		$request = "SELECT * FROM articles WHERE title LIKE '%".$tags."%' OR tags LIKE '%".$tags."%' ORDER BY creation_date DESC";
 		$prep = $db->prepare($request);
 		$prep->execute();
 
