@@ -2,7 +2,7 @@
 
 return array(
 	'host' 		=> 'localhost',
-	'database'	=> 'lolnope',
+	'database'	=> 'eloteck_fr',
 	'user'		=> 'root',
 	'passwd'	=> ''
 );

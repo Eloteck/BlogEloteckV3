@@ -440,6 +440,41 @@ input[type=submit]{
 }
 
 /*--------------------------------------------------*/
+/*						PAGES						*/
+/*--------------------------------------------------*/
+
+.article-nb-page{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.article-nb-page span,
+.article-nb-page a{
+	flex: 1;
+}
+
+.article-nb-page a{
+	text-decoration: none;
+	color: #777777;
+
+	transition: all 0.2s ease;
+}
+
+.article-nb-page a:hover{
+	text-decoration: underline;
+	color: #333;
+
+	transition: all 0.2s ease;
+}
+
+.article-nb-page .navigation{
+	font-size: 0.8em;
+}
+
+/*--------------------------------------------------*/
 /*						FORMS						*/
 /*--------------------------------------------------*/
 
@@ -523,6 +558,10 @@ input[type=submit]{
 
 	.content{
 		flex: 2;
+	}
+
+	.article-nb-page{
+		flex-direction: row;
 	}
 }
 
