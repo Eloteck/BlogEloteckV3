@@ -9,7 +9,7 @@
 				<?php endif ?>
 				<input type="text" name="username" for="username" placeholder="Nom d'utilisateur" required />
 				<input type="password" name="passwd" placeholder="Mot de passe" required />
-				<input type="submit" name="submit" value="Connexion" required />
+				<input type="submit" name="submit" value="Connexion" class="button" required />
 			</form>
 		</div>
 		<img src="img/shield.png" class="shield">

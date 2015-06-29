@@ -24,19 +24,19 @@ p,a{
 	margin: 7px 0;
 }
 
-html{
-	background: #EAEAEA;
+b{
+	font-weight: bold;
 }
 
-img{
-	width : 100%;
+html{
+	background: #EAEAEA;
 }
 
 form label img{
 	width: 35px;
 }
 
-input{
+input, textarea{
 	display: block;
 	border-radius: 5px;
 	padding: 10px;
@@ -47,8 +47,7 @@ input{
 }
 
 input[type=submit]{
-	background: #CCCCCC;
-	border: 1px solid #ADADAD;
+	border: none;
 	width: auto;
 }
 
@@ -76,7 +75,6 @@ input[type=submit]{
 
 .success-message{
 	background: #76FF99;
-	border: 1px solid green;
 	border-radius: 3px;
 	padding: 10px;
 	margin: 10px 0;
@@ -95,10 +93,11 @@ input[type=submit]{
 	background: #DDDDDD;
 	border-radius : 3px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .red{
-	background: #FF5151;
+	background-color: #FF5151;
 	color:#FFF;
 }
 
@@ -213,6 +212,7 @@ input[type=submit]{
 
 .about .pp img{
 	position: relative;
+	width: 100%;
 	bottom: 60px;
 }
 
@@ -323,7 +323,7 @@ input[type=submit]{
 
 #Twitter ul li .tweet_image{
     float: left;
-    border-radius: 3px;
+    border-radius: 50%;
     margin-top: 5px;
     width : 48px;
     height : 48px;
@@ -401,7 +401,6 @@ input[type=submit]{
 
 .article .article-content .article-link{
 	background: #D7D7D7;
-	border: 1px solid #CCC;
 	border-radius: 3px;
 	padding: 10px;
 
@@ -425,6 +424,10 @@ input[type=submit]{
 	color: #555;
 }
 
+.article img{
+	width: 100%;
+}
+
 .article blockquote{
 	font-style: italic;
 	background: #DDDDDD;
@@ -434,6 +437,41 @@ input[type=submit]{
 
 .article blockquote code{
 	font-family: "Inconsolata", serif;
+}
+
+/*--------------------------------------------------*/
+/*						PAGES						*/
+/*--------------------------------------------------*/
+
+.article-nb-page{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.article-nb-page span,
+.article-nb-page a{
+	flex: 1;
+}
+
+.article-nb-page a{
+	text-decoration: none;
+	color: #777777;
+
+	transition: all 0.2s ease;
+}
+
+.article-nb-page a:hover{
+	text-decoration: underline;
+	color: #333;
+
+	transition: all 0.2s ease;
+}
+
+.article-nb-page .navigation{
+	font-size: 0.8em;
 }
 
 /*--------------------------------------------------*/
@@ -482,6 +520,20 @@ input[type=submit]{
 	max-width: 100%;
 }
 
+
+.article-list .list{
+	list-style: none;
+	padding: 0;
+}
+
+.article-list .list li{
+	padding: 7px 0;
+}
+
+.article-list .list .list-article-title{
+	text-decoration: none;
+	font-weight: 400;
+}
 /*--------------------------------------------------*/
 /*						TABLETTES					*/
 /*--------------------------------------------------*/
@@ -507,6 +559,10 @@ input[type=submit]{
 	.content{
 		flex: 2;
 	}
+
+	.article-nb-page{
+		flex-direction: row;
+	}
 }
 
 /*--------------------------------------------------*/
@@ -516,8 +572,12 @@ input[type=submit]{
 @media screen and (min-width: 960px){
 
 	input{
-		max-width: 100%;
-		width: 100%;
+		width: 300px;
+	}
+
+	textarea{
+		width: 500px;
+		max-width: 90%;
 	}
 
 

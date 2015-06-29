@@ -11,6 +11,8 @@
     })();
 </script>
 <noscript>Veuillez activer javascript pour voir les <a href="https://disqus.com/?ref_noscript" rel="nofollow">commentaires.</a></noscript>
+<!-- Load reCAPTCHA -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 <!-- Load scEditor if connected -->
@@ -22,7 +24,7 @@
         $(function() {
             // Replace all textarea's
             // with SCEditor
-            $("textarea").sceditor({
+            $("#editor").sceditor({
                 plugins: "xhtml",
             style: "minified/jquery.sceditor.default.min.css"
             });

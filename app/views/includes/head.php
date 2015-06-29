@@ -1,7 +1,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Eloteck.fr - <?= $title ?></title>
-	<base href="/BlogEloteckV3/public/">
+	<base href="/">
 	<!-- load my css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- fonts -->

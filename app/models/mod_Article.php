@@ -8,11 +8,11 @@ class mod_Article extends Database
 		parent::__construct();
 	}
 
-	public function getArticlesByNumber($nbArticles)
+	public function getArticlesByNumber($nbArticle, $offset)
 	{
 		$db = $this->db;
 
-		$request = "SELECT * FROM articles ORDER BY creation_date DESC LIMIT 0,".$nbArticles;
+		$request = "SELECT * FROM articles ORDER BY creation_date DESC LIMIT ".$nbArticle.", ".$offset;
 		$prep = $db->prepare($request);
 		$prep->execute();
 
@@ -47,7 +47,7 @@ class mod_Article extends Database
 	{
 		$db = $this->db;
 
-		$request = "SELECT * FROM articles ORDER BY creation_date";
+		$request = "SELECT * FROM articles ORDER BY creation_date DESC";
 		$prep = $db->prepare($request);
 		$prep->execute();
 
@@ -59,7 +59,7 @@ class mod_Article extends Database
 	{
 		$db = $this->db;
 
-		$request = "SELECT * FROM articles WHERE title LIKE '%".$tags."%' OR tags LIKE '%".$tags."%' ORDER BY creation_date";
+		$request = "SELECT * FROM articles WHERE title LIKE '%".$tags."%' OR tags LIKE '%".$tags."%' ORDER BY creation_date DESC";
 		$prep = $db->prepare($request);
 		$prep->execute();
 
@@ -76,6 +76,27 @@ class mod_Article extends Database
 		$result = $prep->execute();
 
 		return $result;
+	}
+
+	public function deleteArticle($url)
+	{
+		$request = "DELETE FROM articles WHERE url='".$url."' ";
+
+		$db = $this->db;
+		$prep = $db->prepare($request);
+		$result = $prep->execute();
+
+		return $result;
+	}
+
+	public function getNbArticle()
+	{
+		$db = $this->db;
+
+		$request = "SELECT COUNT(*) FROM articles";
+		$send=$db->query($request);
+		$res = $send->fetch();
+		return $res; 
 	}
 
 }
