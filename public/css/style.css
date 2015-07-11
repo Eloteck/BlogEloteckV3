@@ -81,6 +81,10 @@ input[type=submit]{
 	color: #333;
 }
 
+ul{
+	padding-left: 30px;
+}
+
 /*--------------------------------------------------*/
 /*						Buttons						*/
 /*--------------------------------------------------*/
@@ -137,6 +141,7 @@ input[type=submit]{
 
 .princ_header .menu .hamburger .deroul-menu{
 	display: none;
+	padding: 0;
 }
 
 .princ_header .menu .hamburger .menu-icon span {
@@ -514,10 +519,9 @@ input[type=submit]{
 }
 
 
-.write-article textarea{
+#editor{
 	width: 100%;
 	height: 500px;
-	max-width: 100%;
 }
 
 
@@ -538,7 +542,7 @@ input[type=submit]{
 /*						TABLETTES					*/
 /*--------------------------------------------------*/
 
-@media screen and (min-width: 700px){
+@media all and (min-width: 700px){
 
 	.princ_main{
 		display: flex;
@@ -569,7 +573,7 @@ input[type=submit]{
 /*							PC						*/
 /*--------------------------------------------------*/
 
-@media screen and (min-width: 960px){
+@media all and (min-width: 960px){
 
 	input{
 		width: 300px;
