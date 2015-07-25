@@ -35,6 +35,5 @@
 	<div class="box-content">
 		<h2>Derniers tweets</h2>
 		<?php require_once '../app/plugins/Elo_tweets/Elo_tweets.php'; ?>
-		<a href="http://twitter.com/Eloteck" target="_blank">@Eloteck</a>
 	</div>
 </div>
