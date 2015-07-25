@@ -1,8 +1,9 @@
-*{
+*
+{
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	font-weight: normal;
 	color: #333;
 }
 
@@ -10,33 +11,40 @@
 /*						DEFAULT						*/
 /*--------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6
+{
 	font-weight: normal;
 }
 
-h1{
+h1
+{
 	font-size: 2em;
 	border-bottom: 1px solid #FFA500;
 	margin-bottom: 20px;
 }
 
-p,a{
+p, a
+{
 	margin: 7px 0;
 }
 
-b{
+b
+{
 	font-weight: bold;
 }
 
-html{
+html
+{
 	background: #EAEAEA;
 }
 
-form label img{
+form label img
+{
 	width: 35px;
 }
 
-input, textarea{
+input, textarea
+{
 	display: block;
 	border-radius: 5px;
 	padding: 10px;
@@ -46,17 +54,20 @@ input, textarea{
 	width: 100%;
 }
 
-input[type=submit]{
+input[type=submit]
+{
 	border: none;
 	width: auto;
 }
 
-.icon{
+.icon
+{
 	width: 21px;
 	height: 100%;
 }
 
-.box{
+.box
+{
 	background: #FFFFFF;
 	border: 1px solid #DDD;
 	box-shadow: 0 0 5px #DDD;
@@ -64,7 +75,8 @@ input[type=submit]{
 	padding-bottom: 10px;
 }
 
-.error-message{
+.error-message
+{
 	background: #FF8080;
 	border: 1px solid red;
 	border-radius: 3px;
@@ -73,7 +85,8 @@ input[type=submit]{
 	color: #FFF;
 }
 
-.success-message{
+.success-message
+{
 	background: #76FF99;
 	border-radius: 3px;
 	padding: 10px;
@@ -81,7 +94,8 @@ input[type=submit]{
 	color: #333;
 }
 
-ul{
+ul
+{
 	padding-left: 30px;
 }
 
@@ -89,7 +103,8 @@ ul{
 /*						Buttons						*/
 /*--------------------------------------------------*/
 
-.button{
+.button
+{
 	display: block;
 	width: 100px;
 	text-align: center;
@@ -100,12 +115,14 @@ ul{
 	cursor: pointer;
 }
 
-.red{
+.red
+{
 	background-color: #FF5151;
 	color:#FFF;
 }
 
-.green{
+.green
+{
 	background: green;
 	color:#FFF;
 }
@@ -114,37 +131,43 @@ ul{
 /*						HEADER						*/
 /*--------------------------------------------------*/
 
-.princ_header{
+.princ_header
+{
 	background: #333;
 	color: #FFF;
 	padding: 20px;
 	text-align: center;
 }
 
-.princ_header h1{
+.princ_header h1
+{
 	color: #FFF;
 	border: none;
 	margin-bottom: 0;
 }
 
 /*------------Hamburger-----------------*/
-.princ_header .menu .hamburger{
+.princ_header .menu .hamburger
+{
     width: 100%;
 }
 
-.princ_header .menu .hamburger .menu-icon{
+.princ_header .menu .hamburger .menu-icon
+{
 	position: relative; 
     height: 54px; 
     border-radius: 50%;
     transition: transform 0.5s; 
 }
 
-.princ_header .menu .hamburger .deroul-menu{
+.princ_header .menu .hamburger .deroul-menu
+{
 	display: none;
 	padding: 0;
 }
 
-.princ_header .menu .hamburger .menu-icon span {
+.princ_header .menu .hamburger .menu-icon span 
+{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -160,7 +183,8 @@ ul{
 }
 
 .princ_header .menu .hamburger .menu-icon span::before, 
-.princ_header .menu .hamburger .menu-icon span::after {
+.princ_header .menu .hamburger .menu-icon span::after 
+{
     content: '';
     position: absolute;
     top: 0;
@@ -176,28 +200,33 @@ ul{
     transition: transform 0.5s;
 }
 
-.princ_header .menu .hamburger .menu-icon span::after {
+.princ_header .menu .hamburger .menu-icon span::after 
+{
     transform: translateY(6px); 
 }
 
-.princ_header .menu .hamburger:hover .deroul-menu{
+.princ_header .menu .hamburger:hover .deroul-menu
+{
 	display: block;
 	width: 100%;
 }
 
 .princ_header .menu .hamburger,
-.princ_header .menu .hamburger li{
+.princ_header .menu .hamburger li
+{
 	display: block;
 	list-style: none;
 	transition: ease 0.2s all;
 }
 
-.princ_header .menu .hamburger li:hover{
+.princ_header .menu .hamburger li:hover
+{
 	background: #666;
 	transition: ease 0.2s all;
 }
 
-.princ_header .menu .hamburger a{
+.princ_header .menu .hamburger a
+{
 	display: block;
 	padding: 7px;
 	margin:0;
@@ -210,48 +239,62 @@ ul{
 /*						COLUMN						*/
 /*--------------------------------------------------*/
 
-.about .pp{
+.about .pp
+{
 	height: 100px;
 	overflow: hidden;
 }
 
-.about .pp img{
+.about .pp img
+{
 	position: relative;
 	width: 100%;
 	bottom: 60px;
 }
 
-.about .user-info h2::before{
+.about .user-info h2::before
+{
 	content: url('../img/user20.png');
 	margin-right: 20px;
 	width: 20px;
 }
 
-.about .user-info .user-location{
+.about .user-info p
+{
+	font-weight: 300;
+	color: #777;
+}
+
+.about .user-info .user-location
+{
 	font-style: italic;
 	color: #999;
 	margin-top: 20px;
 }
 
-.about .user-info .user-location::before{
+.about .user-info .user-location::before
+{
 	content: url('../img/location.png');
 	margin-right: 10px;
 }
 
 
-.find-me .box-content ul{
+.find-me .box-content ul
+{
 	margin-top: 10px;
 	padding: 0;
 }
 
-.find-me .box-content ul li{
+.find-me .box-content ul li
+{
 	list-style: none;
 	display: inline;
 	vertical-align: middle;
 	margin: 5px;
 }
 
-.find-me .box-content ul li img{
+.find-me .box-content ul li img
+{
 	width: 40px;
 	opacity: 0.5;
 	filter: grayscale(1);
@@ -262,7 +305,8 @@ ul{
 	transition: ease 0.3s opacity;
 }
 
-.find-me .box-content ul li:hover img{
+.find-me .box-content ul li:hover img
+{
 	opacity: 1;
 	filter: grayscale(0);
     -webkit-filter: grayscale(0);
@@ -274,7 +318,8 @@ ul{
 
 
 
-.search .search-input{
+.search .search-input
+{
 	border: none;
 	border-bottom: 3px solid #CCC;
 	padding:7px;
@@ -287,47 +332,55 @@ ul{
 	transition: all 0.3s ease;
 }
 
-.search .search-input:focus{
+.search .search-input:focus
+{
 	border-bottom: 3px solid #666;
 	background-position: right top;
 	transition: all 0.3s ease;
 }
 
 /*-----------------TWEETS*/
-#Twitter{
+#Twitter
+{
     margin-top: 20px;
     width : 100%;
 }
 
-#Twitter ul{
+#Twitter ul
+{
     padding-left: 15px;
 }
 
-#Twitter ul li{
+#Twitter ul li
+{
     list-style: none;
     padding-bottom: 20px;
     /*border-bottom: solid 1px #CCC;*/
 }
 
-#Twitter .tweet{
+#Twitter .tweet
+{
     margin-bottom: 0px;
     font-size: 0.9em;
     color: #777;
 }
 
-#Twitter ul li .tweet_full{
+#Twitter ul li .tweet_full
+{
     width : 70%;
     margin-left: 60px;
 }
 
-#Twitter ul li .tweet_date{
+#Twitter ul li .tweet_date
+{
     font-size : 0.7em;
     color: #999;
     margin: 0px;
     margin-top : 2px;
 }
 
-#Twitter ul li .tweet_image{
+#Twitter ul li .tweet_image
+{
     float: left;
     border-radius: 50%;
     margin-top: 5px;
@@ -335,7 +388,8 @@ ul{
     height : 48px;
 }
 
-#Twitter a{
+#Twitter a
+{
     color : #ff9000;
 }
 
@@ -343,13 +397,15 @@ ul{
 /*						FOOTER						*/
 /*--------------------------------------------------*/
 	
-.princ_footer{
+.princ_footer
+{
 	background: #333;
 	padding: 10px;
 	text-align: center;
 }
 
-.princ_footer p{
+.princ_footer p
+{
 	color: #FFF;
 }
 
@@ -357,19 +413,23 @@ ul{
 /*						ARTICLES					*/
 /*--------------------------------------------------*/
 
-.box-content{
+.box-content
+{
 	padding: 20px;
 }
 
-.article{
+.article
+{
 	max-width: 800px;
 }
 
-.article .article-content{
+.article .article-content
+{
 	padding: 30px;
 }
 
-.article .article-content .article-info{
+.article .article-content .article-info
+{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -380,32 +440,39 @@ ul{
 .article .article-content .article-info .article-date,
 .article .article-content .article-info .article-tags,
 .article .article-content .article-info .article-category
+
 {
 	color: #AAA;
 	font-size: 0.9em;
 	flex: 1;
 }
 
-.article .article-content .article-info .article-date::before{
+.article .article-content .article-info .article-date::before
+{
 	margin-right: 10px;
 	content: url('../img/write20.png');
 }
 
-.article .article-content .article-info .article-tags::before{
+.article .article-content .article-info .article-tags::before
+{
 	margin-right: 10px;
 	content: url('../img/tag20.png');
 }
 
-.article .article-content .article-info .article-category::before{
+.article .article-content .article-info .article-category::before
+{
 	margin-right: 10px;
 	content: url('../img/category20.png');
 }
 
-.article .article-content .article-text{
-	padding-bottom: 20px;
+.article .article-content .article-text
+{
+	padding-bottom: 30px;
+	text-align: justify;
 }
 
-.article .article-content .article-link{
+.article .article-content .article-link
+{
 	background: #D7D7D7;
 	border-radius: 3px;
 	padding: 10px;
@@ -415,33 +482,44 @@ ul{
 	transition: ease 0.2s box-shadow;
 }
 
-.article .article-content .article-link:hover{
+.article .article-content .article-link:hover
+{
 	box-shadow: 0 0 6px #CCC inset;
 	transition: ease 0.2s box-shadow;
 }
 
-.article .article-content .article-link:active{
+.article .article-content .article-link:active
+{
 	border: none;
 	background: #FFA500;
 	color: #FFFFFF;
 }
 
-.article p{
+.article .article-content #disqus_thread
+{
+	margin-top: 20px;
+}
+
+.article p
+{
 	color: #555;
 }
 
-.article img{
+.article img
+{
 	width: 100%;
 }
 
-.article blockquote{
+.article blockquote
+{
 	font-style: italic;
 	background: #DDDDDD;
 	border-left: 3px solid #FFA500;
 	padding: 10px;
 }
 
-.article blockquote code{
+.article blockquote code
+{
 	font-family: "Inconsolata", serif;
 }
 
@@ -449,7 +527,8 @@ ul{
 /*						PAGES						*/
 /*--------------------------------------------------*/
 
-.article-nb-page{
+.article-nb-page
+{
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -458,25 +537,29 @@ ul{
 }
 
 .article-nb-page span,
-.article-nb-page a{
+.article-nb-page a
+{
 	flex: 1;
 }
 
-.article-nb-page a{
+.article-nb-page a
+{
 	text-decoration: none;
 	color: #777777;
 
 	transition: all 0.2s ease;
 }
 
-.article-nb-page a:hover{
+.article-nb-page a:hover
+{
 	text-decoration: underline;
 	color: #333;
 
 	transition: all 0.2s ease;
 }
 
-.article-nb-page .navigation{
+.article-nb-page .navigation
+{
 	font-size: 0.8em;
 }
 
@@ -484,25 +567,29 @@ ul{
 /*						FORMS						*/
 /*--------------------------------------------------*/
 
-.login-form .box-content{
+.login-form .box-content
+{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 }
 
-.login-form .box-content form input{
+.login-form .box-content form input
+{
 	margin: 10px auto;
 	text-align: center;
 }
 
 .login-form .box-content form input[type=text],
 .login-form .box-content form input[type=password],
-.login-form .box-content .error-message{
+.login-form .box-content .error-message
+{
 	width: 80%;
 	max-width: 300px;
 }
 
-.login-form .box-content .shield{
+.login-form .box-content .shield
+{
 	display: none;
 	margin: auto;
 	width: 200px;
@@ -514,28 +601,33 @@ ul{
 /*--------------------------------------------------*/
 
 .admin_index ul,
-.article-list ul{
+.article-list ul
+{
 	padding-left: 30px;
 	margin-bottom: 20px;
 }
 
 
-#editor{
+#editor
+{
 	width: 100%;
 	height: 500px;
 }
 
 
-.article-list .list{
+.article-list .list
+{
 	list-style: none;
 	padding: 0;
 }
 
-.article-list .list li{
+.article-list .list li
+{
 	padding: 7px 0;
 }
 
-.article-list .list .list-article-title{
+.article-list .list .list-article-title
+{
 	text-decoration: none;
 	font-weight: 400;
 }
@@ -543,29 +635,34 @@ ul{
 /*						TABLETTES					*/
 /*--------------------------------------------------*/
 
-@media all and (min-width: 700px){
+@media all and (min-width: 700px)	{
 
-	.princ_main{
+	.princ_main
+	{
 		display: flex;
 		flex-direction: row;
 	}
 
-	.void{
+	.void
+	{
 		max-width: 20px;
 		min-width: 20px;
 		width: 20px;
 	}
 
-	.column{
+	.column
+	{
 		flex: 1;
 		max-width: 400px;
 	}
 
-	.content{
+	.content
+	{
 		flex: 2;
 	}
 
-	.article-nb-page{
+	.article-nb-page
+	{
 		flex-direction: row;
 	}
 }
@@ -574,13 +671,15 @@ ul{
 /*							PC						*/
 /*--------------------------------------------------*/
 
-@media all and (min-width: 960px){
+@media all and (min-width: 960px)	{
 
-	input{
+	input
+	{
 		width: 300px;
 	}
 
-	textarea{
+	textarea
+	{
 		width: 500px;
 		max-width: 90%;
 	}
@@ -588,37 +687,44 @@ ul{
 
 	/*---------------HEADER-------------*/
 
-	.princ_header{
+	.princ_header
+	{
 		text-align: left;
 		padding: 0;
 	}
 
 	.princ_header .header_content,
-	.princ_header .menu .menu_content{
+	.princ_header .menu .menu_content
+	{
 		width: 80%;
 		max-width: 1280px;
 		margin: auto;
 	}
 
-	.princ_header h1{
+	.princ_header h1
+	{
 		flex:1;
 		padding: 15px;
 	}
 
-	.princ_header .menu{
+	.princ_header .menu
+	{
 		flex: 1;
 		align-items: flex-end;
 		background: #444;
 	}
 
-	.princ_header .menu .hamburger a{
+	.princ_header .menu .hamburger a
+	{
 		padding: 15px;
 		padding-bottom: 11px;
 		border-bottom: 4px solid #444;
+		font-weight: 300;
 		transition: ease 0.2s border;
 	}
 
-	.princ_header .menu .hamburger a:hover{
+	.princ_header .menu .hamburger a:hover
+	{
 		border-bottom: 4px solid #FFA500;
 		color: #FFA500;
 		padding-bottom: 11px;
@@ -626,31 +732,37 @@ ul{
 		transition: ease 0.2s border;
 	}
 
-	.princ_header .menu .hamburger li:hover{
+	.princ_header .menu .hamburger li:hover
+	{
 		background: none;
 	}
 
-	.princ_header .menu .hamburger .menu-icon{
+	.princ_header .menu .hamburger .menu-icon
+	{
 		display: none;
 	}
 
-	.princ_header .menu .hamburger .deroul-menu{
+	.princ_header .menu .hamburger .deroul-menu
+	{
 		display: flex;
 		flex-direction: row;
 	}
 
-	.princ_header .menu .hamburger:hover .deroul-menu{
+	.princ_header .menu .hamburger:hover .deroul-menu
+	{
 		display: flex;
 		flex-direction: row;
 	}
 
-	.princ_header .menu .hamburger:hover .deroul-menu li{
+	.princ_header .menu .hamburger:hover .deroul-menu li
+	{
 		vertical-align: middle;
 	}
 
 	/*---------------MAIN-------------*/
 
-	.princ_main{
+	.princ_main
+	{
 		width: 80%;
 		max-width: 1280px;
 		margin: auto;
@@ -659,12 +771,14 @@ ul{
 
 	/*---------------ARTICLE-------------*/
 
-	.article .article-content .article-info{
+	.article .article-content .article-info
+	{
 		flex-direction: row;
 		align-flex: flex-end;
 	}
 	
-	.article .article-content .article-info .void{
+	.article .article-content .article-info .void
+	{
 		width: 20px;
 		max-width: 20px;
 		min-width: 20px;
@@ -672,30 +786,35 @@ ul{
 
 	/*---------------FORM-------------*/
 	
-	.login-form .box-content{
+	.login-form .box-content
+	{
 		text-align: left;
 		display: flex;
 		flex-direction: row;
 	}
 
-	.login-form .box-content .form{
+	.login-form .box-content .form
+	{
 		flex: 1;
 	}
 
-	.login-form .box-content .shield{
+	.login-form .box-content .shield
+	{
 		display: flex;
 		width: 200px;
 		margin-right: 30px;
 	}
 
-	.login-form .box-content form input{
+	.login-form .box-content form input
+	{
 		margin: 10px 0;
 		text-align: left;
 	}
 
 	.login-form .box-content form input[type=text],
 	.login-form .box-content form input[type=password],
-	.login-form .box-content .error-message{
+	.login-form .box-content .error-message
+	{
 		width: 80%;
 		max-width: 500px;
 	}
