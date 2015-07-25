@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 	<?php require_once '../app/views/includes/head.php'; ?>
 <body>
 	<?php require_once '../app/views/includes/header.php'; ?>

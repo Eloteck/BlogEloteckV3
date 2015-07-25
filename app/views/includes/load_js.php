@@ -15,19 +15,14 @@
 <!-- Load Twitter share button -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<!-- Load scEditor if connected -->
-<?php if (isset($_SESSION['pseudo'])): ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script type="text/javascript" src="widgets/scEditor/minified/jquery.sceditor.bbcode.min.js"></script>
+<!-- Load AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 
-    <script>
-        $(function() {
-            // Replace all textarea's
-            // with SCEditor
-            $("#editor").sceditor({
-                plugins: "xhtml",
-            style: "minified/jquery.sceditor.default.min.css"
-            });
-        });
-    </script>
-<?php endif ?>
+<!-- Load ckEditor -->
+<script src="//cdn.ckeditor.com/4.5.1/full/ckeditor.js"></script>
+
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('article_content');
+</script>
