@@ -15,6 +15,8 @@
 		</div>
 		<p><?= $data[0]['content'] ?></p>
 
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="Eloteck" data-lang="fr" data-size="large" data-related="Eloteck" data-dnt="true">Tweeter</a>
+
 		<div id="disqus_thread"></div>
 	</div>
 </div>
