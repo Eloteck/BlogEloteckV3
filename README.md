@@ -1,5 +1,5 @@
 # BlogEloteckV3
-Just my blog.
+Just a blog.
 
 ###Features :
   - Panel admin
