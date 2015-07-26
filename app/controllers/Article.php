@@ -27,26 +27,36 @@ class Article extends Controller
 
 	public function search()
 	{
-		if (isset($_POST['search'])) {
-			$getArticle = $this->model('mod_Article'); //require the model
-			$articles = $getArticle->getArticlesByTags($_POST['search']);
-
-			if (count($articles)) {
-				foreach ($articles as $key => $article) { //Date layout
-					$cut_day_hour = explode(' ', $article['creation_date']);
-					$day = explode('-', $cut_day_hour[0]);
-					$hour = explode(':', $cut_day_hour[1]);
-
-					$articles[$key]['creation_date'] = 'Publié le '.$day[2].'/'.$day[1].' à '.$hour[0].'h'.$hour[1];
-					
-					require_once '../app/plugins/truncate/truncate.php';
-					$articles[$key]['content'] = truncate($articles[$key]['content'], 500);
-				}
-				$this->view('search', $articles);
+		if (isset($_GET['search'])) {
+			if (empty($_GET['search'])) {
+				header('Location: ../index.php');
 			}
 			else{
-				$this->view('error');
+				$getArticle = $this->model('mod_Article'); //require the model
+				$articles = $getArticle->getArticlesByTags($_GET['search']);
+
+				if (count($articles)) {
+					foreach ($articles as $key => $article) { //Date layout
+						$cut_day_hour = explode(' ', $article['creation_date']);
+						$day = explode('-', $cut_day_hour[0]);
+						$hour = explode(':', $cut_day_hour[1]);
+
+						$articles[$key]['creation_date'] = 'Publié le '.$day[2].'/'.$day[1].' à '.$hour[0].'h'.$hour[1];
+						
+						require_once '../app/plugins/truncate/truncate.php';
+						$articles[$key]['content'] = truncate($articles[$key]['content'], 140);
+					}
+					$this->view('search', ['articles' => $articles, 'result' => count($articles)]);
+				}
+				else
+				{
+					$this->view('search', ['result' => 0]);
+				}
 			}
+		}
+		else
+		{
+			$this->view('error');
 		}
 	}
 }

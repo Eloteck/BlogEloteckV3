@@ -13,7 +13,11 @@
 			<div class="void"></div>
 			<p class="article-category"><?= $data[0]['category'] ?></p>
 		</div>
-		<p><?= $data[0]['content'] ?></p>
+		<div class="article-text">
+			<p><?= $data[0]['content'] ?></p>
+		</div>
+
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="Eloteck" data-lang="fr" data-size="large" data-related="Eloteck" data-dnt="true">Tweeter</a>
 
 		<div id="disqus_thread"></div>
 	</div>

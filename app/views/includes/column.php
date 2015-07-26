@@ -14,8 +14,12 @@
 <div class="search box">
 	<div class="box-content">
 		<h2>Rechercher</h2>
-		<form method="POST" action="article/search">
-			<input type="search" name="search" class="search-input" placeholder="Rechercher" />
+		<form method="GET" action="article/search">
+			<?php if (isset($_GET['search'])): ?>
+				<input type="search" name="search" class="search-input" placeholder="Rechercher" value="<?= $_GET['search'] ?>"/>
+			<?php else: ?>
+				<input type="search" name="search" class="search-input" placeholder="Rechercher" />
+			<?php endif ?>
 		</form>
 	</div>
 </div>
@@ -35,6 +39,5 @@
 	<div class="box-content">
 		<h2>Derniers tweets</h2>
 		<?php require_once '../app/plugins/Elo_tweets/Elo_tweets.php'; ?>
-		<a href="http://twitter.com/Eloteck" target="_blank">@Eloteck</a>
 	</div>
 </div>
