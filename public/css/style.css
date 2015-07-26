@@ -60,6 +60,24 @@ input[type=submit]
 	width: auto;
 }
 
+blockquote
+{
+	font-style: italic;
+	background: #DDDDDD;
+	border-left: 3px solid #FFA500;
+	padding: 10px;
+}
+
+code
+{
+	font-family: "Inconsolata", serif;
+	background: #333333;
+	color: #FFFFFF;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+}
+
 .icon
 {
 	width: 21px;
@@ -508,19 +526,6 @@ ul
 .article img
 {
 	width: 100%;
-}
-
-.article blockquote
-{
-	font-style: italic;
-	background: #DDDDDD;
-	border-left: 3px solid #FFA500;
-	padding: 10px;
-}
-
-.article blockquote code
-{
-	font-family: "Inconsolata", serif;
 }
 
 /*--------------------------------------------------*/

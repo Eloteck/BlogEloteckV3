@@ -22,7 +22,9 @@
 <script src="//cdn.ckeditor.com/4.5.1/full/ckeditor.js"></script>
 
 <script>
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
+    var editor = document.getElementById('editor')
     CKEDITOR.replace('article_content');
 </script>
+
+<!-- Load preview.js -->
+<script src="js/preview.js"></script>

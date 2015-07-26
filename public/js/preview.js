@@ -1,5 +1,7 @@
 var button = document.getElementById("preview-button");
 
 button.addEventListener("click", function(){
-	alert(document.getElementById("editor").value);
+	for(var instanceName in CKEDITOR.instances)
+    CKEDITOR.instances[instanceName].updateElement();
+	document.getElementById("preview_area").innerHTML = document.getElementById("editor").value;
 });
