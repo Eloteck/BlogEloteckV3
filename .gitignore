@@ -42,6 +42,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 app/plugins/Elo_tweets/cache.tmp
-app/config
-app/config/database.php
-app/plugins/Elo_tweets/cache.tmp
+app/config/elo_tweets.php
+app/config/salt.php

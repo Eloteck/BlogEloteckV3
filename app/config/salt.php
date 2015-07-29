@@ -2,8 +2,8 @@
 
 return array(
 
-	'prefix' => '$HyEv[65',
-	'suffix' => 'F9kE*3}h' 
+	'prefix' => 'nope',
+	'suffix' => 'nope' 
 	//Of course, it's different in the production version :)
 	
 	);
