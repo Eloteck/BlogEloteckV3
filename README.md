@@ -11,13 +11,12 @@ Just a blog.
 
 
 ###Credits
-#####Website : http://eloteck.fr/
+#####Website : http://loickvirot.fr/
 
 #####Contact:
-  - Mail :    eloteck@outlook.com
-  - Twitter : @Eloteck
+  - Mail :    virot.loick@gmail.com
+  - Twitter : @LoickVirot
 
 
 
-MIT License
-Created by Eloteck - 2015 ©
+MIT License - Created by Loïck Virot - 2015 ©
