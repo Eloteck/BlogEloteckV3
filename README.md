@@ -1,4 +1,4 @@
-# BlogEloteckV3
+# Blog V3
 Just a blog.
 
 ###Features :
